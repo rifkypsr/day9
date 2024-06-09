@@ -1,0 +1,121 @@
+
+/* dibwah ini untuk css na */
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-link{
+    font-size: 20px;
+    width: 105px; 
+    /* width berfungsi agar my prject tidak turun kebawah */
+}
+
+
+.nav-link a{ 
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+
+
+}
+
+
+.nav-link a:hover{
+    color: #2200e0;
+    text-decoration: none;
+
+}
+
+.custom-button {
+    background-color: #e2d6d6; 
+    color: rgb(2, 2, 2); 
+    border: none; 
+    max-width: 97px; 
+    padding: 10px 20px;
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 10px; 
+    display:inline-block; 
+    text-align: center; /* Pusatkan teks biar ditengah */
+    text-decoration: none; /* fungsinya menghilangkan garis bawah */
+}
+
+.custom-button:hover {
+    background-color: #3a21c7; 
+    padding: 10px 20px;
+    color: white; 
+}
+
+
+
+/* ini css navbar untuk responsive layout */
+#hamburger-button {
+    display: none;
+}
+.hamburger-nav-container {
+    display: none;
+
+}
+
+
+.hamburger-nav-container{
+    display: none;
+    color: #ffffff;
+    border: 2px rgb(255, 255, 255) solid;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.hamburger-nav-container .active {
+    cursor: pointer;
+    margin: auto;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 10px;
+    padding: 14px 16px;
+}
+
+.hamburger-nav-container .active:hover {
+    background-color: #9f9999;
+    color: #000000;
+    cursor: pointer;
+}
+
+
+
+@media  only screen and (max-width: 500px){
+    #hamburger-button {
+        display: block;
+    }
+
+     .nav-collapse{
+        display: none;
+    } 
+
+.hamburger-nav-container {
+    font-size: 20px;
+    display: none;
+    flex-direction: column;
+}
+
+ @media screen and (max-width: 500px) {
+        body{
+            display: block;}
+        
+    }
+
+}
+
+
+ 
+
+
+
+
+
+    
+    
+
+

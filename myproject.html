@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MY PROJECT</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/myproject.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@553&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+                            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+                         crossorigin="anonymous" referrerpolicy="no-referrer" />
+</html>
+<head>
+    <nav class="nav a" style="background-color: #423d3d; height: 75px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin: 0 30px; height: 100%;">
+            <ul style="display: flex; list-style: none; gap: 20px; align-items: center; margin: 0;">
+                <li>
+                    <img src="logo dumbways.png" alt="Logo Dumbways" style="height: 90px;">
+                </li>
+                <li class="nav-link nav-collapse">
+                    <a href="index.html">     <b>Home</b></a>
+                </li>
+                <li class="nav-link nav-collapse ">
+                    <a href="myproject.html"><b>My Project</b></a>
+                </li>
+                <li class="nav-link nav-collapse">
+                    <a href="testimonial.html"><b>Testimonials </b></a>
+                </li>
+            </ul>
+            <a href="contact.html" class="custom-button nav-collapse" ><b>Contact Me</b></a>
+            <!-- ini bagian hamburger -->
+            <i class="fa-solid fa-burger" style="color: #FFD43B; cursor: pointer;"id="hamburger-button" 
+                onclick="openHamburgerNav()"></i>
+        </div>
+    </nav>
+    
+        <div class="hamburger-nav-container" id="hamburger-nav-container">
+            <a href="index.html"         class="active"  ><b>Home         </b></a> 
+            <a href="myproject.html"     class="active"  ><b>My Project   </b></a>
+            <a href="contact.html"       class="active"  ><b>Contact Me   </b> </a>
+            <a href="testimonial.html"   class="active"  ><b>Testimonial  </b> </a>
+    
+    </div>
+</head>
+
+    <section class="add-project">
+        <h1>ADD MY PROJECT</h1>
+        <form id="projectForm" onsubmit="submitmyProject(event)">
+            <div class="form-group">
+                <label for="projectName">Project Name</label>
+                <input type="text" id="projectName" required>
+            </div>
+            <div class="form-group flex-group">
+                <div class="flex-item">
+                    <label for="startDate">Start Date</label>
+                    <input type="date" id="startDate" required>
+                </div>
+                <div class="flex-item">
+                    <label for="endDate">End Date</label>
+                    <input type="date" id="endDate" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>Technologies</label>
+                <div class="tech-checkboxes">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="nodejs" value="Node Js">
+                        <label for="nodejs">Node Js</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="nextjs" value="Next Js">
+                        <label for="nextjs">Next Js</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="reactjs" value="React Js">
+                        <label for="reactjs">React Js</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="typescript" value="TypeScript">
+                        <label for="typescript">TypeScript</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="uploadImage">Upload Image</label>
+                <input type="file" id="uploadImage" accept="image/*">
+                <div class="button-input">
+            <button type="submit" class="button-input">Submit</button>
+        </form>
+    </section>
+
+    <hr class="line">
+    <h2 class="title-list">MY PROJECT</h2>
+
+    <div id="content" class="blog-list"></div>
+
+    <script src="assets/js/blogday5.js"></script>
+    <script src="assets/js/nav.js"></script>
+</body>
+</html>

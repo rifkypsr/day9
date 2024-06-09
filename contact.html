@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INI ADALAH CONTACT</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@553&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <head>
+        <nav class="nav a" style="background-color: #423d3d; height: 75px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin: 0 30px; height: 100%;">
+                <ul style="display: flex; list-style: none; gap: 20px; align-items: center; margin: 0;">
+                    <li>
+                        <img src="logo dumbways.png" alt="Logo Dumbways" style="height: 90px;">
+                    </li>
+                    <li class="nav-link nav-collapse">
+                        <a href="index.html">     <b>Home</b></a>
+                    </li>
+                    <li class="nav-link nav-collapse ">
+                        <a href="myproject.html"><b>My Project</b></a>
+                    </li>
+                    <li class="nav-link nav-collapse">
+                        <a href="testimonial.html"><b>Testimonials </b></a>
+                    </li>
+                </ul>
+                <a href="contact.html" class="custom-button nav-collapse" ><b>Contact Me</b></a>
+                <!-- ini bagian hamburger -->
+                <i class="fa-solid fa-burger" style="color: #FFD43B; cursor: pointer;"id="hamburger-button" 
+                    onclick="openHamburgerNav()"></i>
+            </div>
+        </nav>
+        
+            <div class="hamburger-nav-container" id="hamburger-nav-container">
+                <a href="index.html"      class="active"  ><b>Home        </b></a> 
+                <a href="myproject.html"  class="active"  ><b>My Project  </b></a>
+                <a href="contact.html"    class="active"  ><b>Contact Me  </b> </a>
+                <a href="testimonial.html"    class="active"  ><b>Testimonial  </b> </a>
+        
+        </div>
+    </head>
+
+    <div class="container">
+
+        <div class="form-container">
+        <h1 style="text-align: center;">apa yang kamu perlukan?</h1>
+
+        <form class="form-contact" onsubmit="submitData()">
+            <label for="inputName">Name</label>
+            <input type="text" class="input-contact" id="inputName">
+
+            <label for="inputEmail">Email</label>
+            <input type="text" class="input-contact" id="inputEmail">
+
+            <label for="inputPhone">Phone Number</label>
+            <input type="text" class="input-contact" id="inputPhone">
+
+            <label for="inputSubject">Subject</label>
+            <select class="input-contact" id="inputSubject">
+                
+                <option>Frontend Developer</option>
+                <option>Backend Developer</option>
+                <option>Fullstack Developer</option>
+            </select>
+
+            <label for="inputMessage">Your Message</label>
+            <textarea class="input-contact" id="inputMessage"></textarea>
+            <input type="submit" value="submit" class="submit-contact">
+        </form>
+    </div> 
+
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/nav.js"></script>
+</body>
+
+</html>

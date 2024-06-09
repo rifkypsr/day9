@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TESTIMONIAL</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/testimonial.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@553&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+                            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+                            crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<nav class="nav a" style="background-color: #423d3d; height: 75px;">
+    <div style="display: flex; align-items: center; justify-content: space-between; margin: 0 30px; height: 100%;">
+        <ul style="display: flex; list-style: none; gap: 20px; align-items: center; margin: 0;">
+                <li>
+                    <img src="logo dumbways.png" alt="Logo Dumbways" style="height: 90px;">
+                </li>
+                <li class="nav-link nav-collapse">
+                    <a href="index.html">     <b>Home</b></a>
+                </li>
+                <li class="nav-link nav-collapse ">
+                    <a href="myproject.html"><b>My Project</b></a>
+                </li>
+                <li class="nav-link nav-collapse">
+                    <a href="testimonial.html"><b>Testimonials </b></a>
+                </li>
+            </ul>
+            <a href="contact.html" class="custom-button nav-collapse" ><b>Contact Me</b></a>
+            <!-- ini bagian hamburger -->
+            <i class="fa-solid fa-burger" style="color: #FFD43B; cursor: pointer;"id="hamburger-button" 
+                onclick="openHamburgerNav()"></i>
+        </div>
+    </nav>
+    
+        <div class="hamburger-nav-container" id="hamburger-nav-container">
+            <a href="index.html"         class="active"      ><b>Home              </b></a> 
+            <a href="myproject.html"     class="active"      ><b>My Project        </b></a>
+            <a href="contact.html"       class="active"      ><b>Contact Me        </b> </a>
+            <a href="testimonial.html"   class="active"      ><b> Testimonial      </b> </a>
+    
+    </div>
+</head>                                        
+      <body>
+        
+                               <!-- BAGIAN NAVIGAS DI ATAS  -->
+                               <div class="container">
+                                <h1>My Testimonials</h1>
+
+                               <div class="container-rating">
+                                <h2> <br> Rating By Star</h2>
+                    
+                                <div class="rating">
+                                    <button class="rating-btn" onclick="showTestimonial()"> ALL </button>
+                                    <button class="rating-btn" onclick="filterTestimonials(1)"> 1<i class="fa-solid fa-star"></i> </button>
+                                    <button class="rating-btn" onclick="filterTestimonials(2)"> 2<i class="fa-solid fa-star"></i> </button>
+                                    <button class="rating-btn" onclick="filterTestimonials(3)"> 3<i class="fa-solid fa-star"></i> </button>
+                                    <button class="rating-btn" onclick="filterTestimonials(4)"> 4<i class="fa-solid fa-star"></i> </button>
+                                    <button class="rating-btn" onclick="filterTestimonials(5)"> 5<i class="fa-solid fa-star"></i> </button>
+                                </div>
+                    
+                            </div>
+                    
+                            <div class="testimonials" id="testimonials">
+                                <div class="testimonial">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJrg6PElI3dpIDJyYKwAbBXM3tE6JKz0DDOQ&usqp=CAU"
+                                        alt="testimonial" class="profile-testimonial">
+                                    <p class="quote">Mancing Mania Mantap</p>
+                                    <p class="author">- N E U R O N </p>
+                                </div>
+                            </div>
+                        </div>
+
+                                                
+
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/testimonial.js"></script>
+</body>
+</html>

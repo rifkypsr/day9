@@ -1,0 +1,253 @@
+.add-project {
+    max-width: 100%;
+    width: 520px;
+    margin: 50px auto;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: rgb(223, 223, 223);
+}
+
+.add-project h1 {
+    font-family: "Bungee Spice", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea,
+.form-group input[type="file"] {
+    max-width: 100%;
+    max-height: 100%;
+    width: 500px;
+    height: 25px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+.form-group input[type="file"] {
+    padding: 8px;
+    height: 20px;
+}
+
+.form-group.technologies label {
+    margin-bottom: 0;
+}
+
+.form-group .tech-checkboxes {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.tech-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin-right: 5px;
+    width: 25px;
+    height: 18px;
+}
+
+.button-input {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.button-input button {
+    margin-top: 50px;
+    padding: 8px 20px;
+    font-size: 17px;
+    background-color: #d0cece; 
+    color: rgb(2, 2, 2); 
+    border: none;  
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 10px; 
+    display:inline-block; 
+    text-align: center; /* Pusatkan teks biar ditengah */
+    text-decoration: none; /* fungsinya menghilangkan garis bawah */
+}
+
+.button-input button:hover {
+    background-color: #3a21c7; 
+    color: white; 
+}
+
+.flex-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.flex-item input[type="text"],
+.flex-item input[type="date"] {
+    display: flex;
+    max-width: 100%;
+    width: 210px;
+    margin: 0 50px 0 0px;
+}
+
+hr.line {
+    margin: 30px auto;
+    width: 80%;
+    border: none;
+    border-top: 2px solid #ccc;
+}
+
+.blog-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    background-color: #f5f5f5;
+    padding: 60px;
+}
+
+.blog-list-items {
+    max-width: 400px;
+    height: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.blog-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: auto auto;
+}
+
+.blog-content {
+    padding: 10px;
+    width: 100%;
+}
+
+.blog-content h1 {
+    font-size: 14px;
+}
+
+.blog-content .detail-blog {
+    margin-top: 3px;
+}
+
+.blog-content .list-deskripsi {
+    display: flex;
+    text-align: justify;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 20px 20px 20px 1px;
+}
+
+.blog-content .list-technologies {
+    display: grid;
+    align-content: space-evenly;
+    justify-content: space-between;
+    align-items: baseline;
+    justify-items: start;
+    font-size: 16px;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 15px 0 -5px;
+    gap: 12px;
+}
+
+.program-icon {
+    display: flex;
+    margin: 25px 0;
+    gap: 15px;
+}
+
+.program-icon .icon {
+    margin-right: 10px;
+    font-size: 25px;
+    color: #575555;
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 5px 10px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-edit:hover {
+    background-color: rgb(36, 14, 201);
+    color: #ffffff;
+}
+
+.btn-delete:hover {
+    background-color: #2007c4;
+    color: #ffffff;
+}
+
+.title-list {
+    font-family: "Anton", sans-serif;
+    text-align: center;
+    padding: 60px 0 0 0;
+    background-color: #f5f5f5;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 710px) {
+  .form-group flex-group {
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    flex-wrap: wrap;
+  }
+  .tech-checkboxes {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 80px;
+    box-sizing: border-box;
+  }
+  
+ .flex-item {
+    width: 100%;
+  }
+  
+
+  .add-project {
+    width: 300px;
+    /* background-color: orangered; */
+  }}

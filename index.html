@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</html>
+<nav class="nav a" style="background-color: #423d3d; height: 75px;">
+    <div style="display: flex; align-items: center; justify-content: space-between; margin: 0 30px; height: 100%;">
+        <ul style="display: flex; list-style: none; gap: 20px; align-items: center; margin: 0;">
+            <li>
+                <img src="logo dumbways.png" alt="Logo Dumbways" style="height: 90px;">
+            </li>
+            <li class="nav-link nav-collapse">
+                <a href="index.html">     <b>Home</b></a>
+            </li>
+            <li class="nav-link nav-collapse ">
+                <a href="myproject.html"><b>My Project</b></a>
+            </li>
+            <li class="nav-link nav-collapse">
+                <a href="testimonial.html"><b>Testimonials </b></a>
+            </li>
+        </ul>
+        <a href="contact.html" class="custom-button nav-collapse" ><b>Contact Me</b></a>
+        <!-- ini bagian hamburger -->
+        <i class="fa-solid fa-burger" style="color: #FFD43B; cursor: pointer;"id="hamburger-button" 
+            onclick="openHamburgerNav()"></i>
+    </div>
+</nav>
+        
+            <div class="hamburger-nav-container" id="hamburger-nav-container">
+                <a href="index.html"      class="active"  ><b>Home        </b></a> 
+                <a href="myproject.html"  class="active"  ><b>My Project  </b></a>
+                <a href="contact.html"    class="active"  ><b>Contact Me  </b> </a>
+                <a href="testimonial.html"    class="active"  ><b>Testimonial  </b> </a>
+        
+        </div>
+    </?head>
+<body>
+        
+    
+    <div
+        style="height: max-content; width: 50%; background-color: rgba(186, 179, 179, 0.614); margin: auto; margin-top: 100px; display: flex;">
+        <div class="text" style=" width: 50%; text-align: justify;">
+            <h1>Hi Welcome to my hunt</h1>
+            <p> <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum aut Lorem ipsum dolor sit amet
+                consectetur
+                adipisicing elit. Voluptate inventore eveniet aspernatur voluptatem ut nobis ea, illum fugit quis ex
+                dolores
+                magni debitis omnis saepe quo rerum deleniti commodi laborum? Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Earum, natus. Ullam modi illo fuga magnam quae praesentium? Veniam, nulla alias,
+                eveniet
+                ipsum, consequuntur ipsam numquam iste cum officiis libero dolore? vitae sed veniam dolores in!
+                Reprehenderit, repellat laboriosam nobis esse dolor magni aspernatur possimus, delectus illo laborum
+                laudantium iure optio!</p>
+            <div style="display: flex;">
+                <div class="contact" style="width: auto;"><a href="" class="contact2">Contact</a></div>
+                <div style="width: auto; display: flex; align-items: center; padding-left: 15px;"><a href="google.com" class="CV">Download CV <i class="fa-solid fa-download"> </i></a>
+                </div>
+            </div>
+            <div class="biodata" style="text-align: right; margin-top: 20px; gap: 15px; margin-left: 0%;">
+                <i class="fa-brands fa-linkedin" style="font-size: 2em;"></i>
+                <i class="fa-brands fa-instagram" style="font-size: 2em; "></i>
+                <i class="fa-brands fa-facebook" style="font-size: 2em;"></i>
+                <i class="fa-brands fa-x-twitter" style="font-size: 2em;"></i>
+            </div>
+        </div>
+
+        <div style=" width: 50%;">
+            <div class="biodata" style="margin-top: 25px; align-items: center; display: flex; justify-content: center; background-color: rgb(255, 255, 255); background-size: cover;">
+                <img src="assets/img/foto/foto.webp"  alt="" style="width: 200pt; height: 280pt; border-radius: 20px;">
+            </div>
+            <div id="tanda_pengenal" style="width: 100%; width:100%; margin-top: -22px;" >
+                <p style="text-align: center; font-size: 24px;"></b> <br> <br> Rifki Alkhairi</b></p>
+                <p style="text-align: center; margin-top: -20px; font-size: 10pt;"> 
+                    <i style="padding-right: 5px;" ></i>
+                    <br> <br>Fullstack Developer
+            </div>
+        </div>
+    </body>
+
+    </div>
+    <script src="assets/js/nav.js"></script>
+</body>
+
+</html>
